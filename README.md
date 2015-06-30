@@ -10,7 +10,7 @@ public側で生成するとうまくいった
 ### google translateのsample API
 https://www.googleapis.com/language/translate/v2?key=<取得したkey>&q="This is a car."&source=en&target=ja
 
-'''json
+```json
 {
   "data": {
     "translations": [
@@ -20,7 +20,15 @@ https://www.googleapis.com/language/translate/v2?key=<取得したkey>&q="This i
     ]
   }
 }
-'''
+```
 
 ### 音声系をpythonで扱えるようにする
+macの場合pyaudioをinstall
+http://people.csail.mit.edu/hubert/pyaudio/
+
+さらに
+
+sudo pip install --upgrade google-api-python-client
+sudo pip install SpeechRecognition
+brew install flac
 
